@@ -7,7 +7,7 @@ const server = Deno.run({
 await new Promise((r) => setTimeout(r, 1500));
 
 try {
-	await Deno.remove("dist", { recursive: true });
+	await Deno.remove("docs", { recursive: true });
 } catch (_) {}
 
 await Deno.run({
@@ -18,14 +18,14 @@ await Deno.run({
 		"--adjust-extension",
 		"--page-requisites",
 		"--no-parent",
-		"--directory-prefix=dist",
+		"--directory-prefix=docs",
 		"http://localhost:8000",
 	],
 }).status();
 
-const src = "dist/localhost:8000";
+const src = "docs/localhost:8000";
 for await (const entry of Deno.readDir(src)) {
-	await Deno.rename(`${src}/${entry.name}`, `dist/${entry.name}`);
+	await Deno.rename(`${src}/${entry.name}`, `docs/${entry.name}`);
 }
 await Deno.remove(src);
 
