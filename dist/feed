@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:8000/blog</id>
     <title>My Blog</title>
-    <updated>2025-12-11T07:08:47.923Z</updated>
+    <updated>2025-12-11T07:11:39.306Z</updated>
     <generator>Feed (https://github.com/jpmonette/feed) for Deno</generator>
     <link rel="alternate" href="http://localhost:8000/blog"/>
     <link rel="self" href="http://localhost:8000/feed"/>
