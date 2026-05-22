@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost/blog</id>
+    <title>danawanb | Danawan Bimantoro</title>
+    <updated>2026-05-22T03:52:01.371Z</updated>
+    <generator>Feed (https://github.com/jpmonette/feed) for Deno</generator>
+    <link rel="alternate" href="http://localhost/blog"/>
+    <link rel="self" href="http://localhost/feed"/>
+    <subtitle>tinkering</subtitle>
+    <icon>http://localhost/favicon.ico</icon>
+    <rights>Copyright 2026 http://localhost</rights>
+    <entry>
+        <title type="html"><![CDATA[Init]]></title>
+        <id>http://localhost/hello_world</id>
+        <link href="http://localhost/hello_world"/>
+        <updated>2025-12-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I'm a programmer who enjoys writing code directly from the terminal, and I care a lot about performance, slow systems bother me more than they should and of course they're ubiquitous.]]></summary>
+        <published>2025-12-11T00:00:00.000Z</published>
+        <rights>Copyright 2026 http://localhost</rights>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Wizard Level]]></title>
+        <id>http://localhost/wizard_level</id>
+        <link href="http://localhost/wizard_level"/>
+        <updated>2026-05-22T03:51:23.878Z</updated>
+        <summary type="html"><![CDATA[Yesterday I watched an FFmpeg podcast video Link where someone mentioned writing assembly on his phone while watching his children at the playground. As someone who doesn't really care about the hype that programming is already solved, I really like it.]]></summary>
+        <published>2026-05-22T03:51:23.878Z</published>
+        <rights>Copyright 2026 http://localhost</rights>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Parser by hand]]></title>
+        <id>http://localhost/parser</id>
+        <link href="http://localhost/parser"/>
+        <updated>2026-01-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Last year, I stumbled upon this dude somehow writing a SQLite parser by hand in Rust: Turso PR. Parsing probably sounds scary if you come from a high-level language, but the TL;DR is simple: parsing just generates the AST structure from tokens/code. As always in CS, the devil is in the details—so I decided to write my own parser.]]></summary>
+        <published>2026-01-12T00:00:00.000Z</published>
+        <rights>Copyright 2026 http://localhost</rights>
+    </entry>
+</feed>

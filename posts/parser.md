@@ -1,6 +1,6 @@
 ---
 title: Parser by hand
-publish_date: 2026-1-12
+publish_date: 2026-01-12
 ---
 
 Last year, I stumbled upon this dude somehow writing a SQLite parser by hand in Rust: [Turso PR](https://github.com/tursodatabase/turso/pull/2381). Parsing probably sounds scary if you come from a high-level language, but the TL;DR is simple: parsing just generates the AST structure from tokens/code. As always in CS, the devil is in the details—so I decided to write my own parser.

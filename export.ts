@@ -23,7 +23,14 @@ await Deno.run({
 	],
 }).status();
 
-const src = "docs/localhost:8000";
+// Linux strips the port from the directory name (localhost vs localhost:8000)
+let src = "docs/localhost:8000";
+try {
+	await Deno.stat(src);
+} catch {
+	src = "docs/localhost";
+}
+
 for await (const entry of Deno.readDir(src)) {
 	await Deno.rename(`${src}/${entry.name}`, `docs/${entry.name}`);
 }
